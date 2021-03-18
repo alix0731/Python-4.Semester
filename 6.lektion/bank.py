@@ -22,16 +22,16 @@ print(b.accounts[0].customer.name)
 
 class Bank:
     def __init__(self):
-        self.accounts = []
+        self.__accounts = []
 
 class Account:
     def __init__(self, num, customer):
         self.num = num
-        self.customer = customer
+        self.__customer = customer
 
 class Customer:
     def __init__(self, name):
-        self.name = name
+        self.__name = name
 
 
 bank = Bank();
